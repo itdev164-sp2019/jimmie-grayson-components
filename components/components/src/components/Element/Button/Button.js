@@ -1,7 +1,7 @@
-import React from 'react'  8.5K (gzipped: 3.4K)
-import PropTypes from 'prop-types' 1.6k (gzipped: 838)
+import React from 'react';  8500 (gzipped, 3400)
+import PropTypes from 'prop-types'; 1600 (gzipped, 838)
 import { ButtonBase } from './ButtonBase'
-import styled from 'styled-components' 43.4k (gzipped: 4.7k)
+import styled from 'styled-components'; 43400 (gzipped, 16200)
 
 const StyledButton = styled (ButtonBase)`
   padding: 8px;
