@@ -1,6 +1,6 @@
-import React from 'react'  8.5K (gzipped: 3.4K)
-import PropTypes from 'prop-types' 1.6k (gzipped: 838)
-import { Flex, Box } from 'rebass' 15.3k (gzipped: 4.7k)
+import React from 'react';  8500 (gzipped, 3400)
+import PropTypes from 'prop-types'; 1600 (gzipped, 838)
+import { Flex, Box } from 'rebass'; 15300 (gzipped, 4700)
 
 export const BaseContainer = ({ children, flex, ...props }) => {
     if (flex) {
