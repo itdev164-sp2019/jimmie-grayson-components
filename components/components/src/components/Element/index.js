@@ -1,3 +1,7 @@
 export * from './address'
 export * from './BassContainer'
 export * from './Button'
+export * from './Footer'
+export * from './Header'
+export * from './Main'
+export * from './Section'

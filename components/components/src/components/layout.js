@@ -1,10 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'; 8500 (gzipped, 3400)
+import PropTypes from 'prop-types'; 1600 (gzipped, 838)
 import { StaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import { ThemeProvider } from 'styled-components'
+import Header from './header'
+import './layout.css'
+import { ThemeProvider } from 'styled-components'; 43300
 import { Gray as theme } from '../themes/Gray'
+import { Footer, Main } from '../components/Element'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
@@ -30,11 +31,11 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
+          <Footer>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          </Footer>
         </div>
       </>
     )}
