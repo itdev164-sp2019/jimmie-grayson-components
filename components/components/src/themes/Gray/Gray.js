@@ -62,6 +62,14 @@ const variants = {
             borderColor: theme.colors.primary.contrastText
         }
     },
+    iconButton: {
+        primary: {
+            color: theme.colors.primary.main
+        },
+        contrast: {
+            color: theme.colors.primary.contrastText
+        }
+    },
     LinkButton: {
         primary: {
             color: theme.colors.primary.main
@@ -70,6 +78,7 @@ const variants = {
             color: theme.colors.primary.contrastText
         }
     },
+
 }
 
 const Gray = { ...theme, defaults, variants }
