@@ -1,36 +1,27 @@
-import React from 'react'
+import React from 'react'; 8500 (gzipped, 3400)
 import { Link } from 'gatsby'
-import { graphql } from 'gatsby';
 
-import Layout from '../components/layout'
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+import { Section } from 'styled-icons/icomoon';
+import { Button } from '../components/Element';
 
-const IndexPage = ({data}) => (
+const IndexPage = () => (
   <Layout>
-    <ul>
-      {
-        data.allContentfulBlogPost.edges.map(edge => (
-          <li>
-            <Link to={edge.node.slug} key={edge.node.id}>{edge.node.title}</Link>
-          </li>
-        ))
-      }
-    </ul>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div>
+    <Section flex justifyContent = "space-evenly" m = {2}>
+      <Link to="/page-2/">Go to page 2</Link>
+      <Button variant = "primary">My Custom Button!</Button>
+      <IconButton icon = {<Search />} />
+    </Section>
   </Layout>
 )
 
 export default IndexPage
-
-export const query = graphql`
-{
-	allContentfulBlogPost (filter: {
-    node_locale: {eq: "en-US"}
-  }) {
-	  edges {
-	    node {
-	      title
-        slug
-	    }
-	  }
-	}
-}
-`
